@@ -1,0 +1,77 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Test API",
+		"_postman_id": "863e7c87-92dc-fbc2-c837-e56301a4f9e9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Filter Characters",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8000/character?name=Rick%20Sanchez",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"character"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Rick%20Sanchez",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Filter characteres in zip format",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8000/character?name=Rick%20Sanchez&format=zip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"character"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Rick%20Sanchez",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "format",
+							"value": "zip",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

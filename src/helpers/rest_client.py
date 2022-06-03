@@ -1,7 +1,7 @@
 
 from typing import Union
 from json.decoder import JSONDecodeError
-from models.response import Response
+from src.models.response import Response
 import requests
 
 

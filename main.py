@@ -1,8 +1,9 @@
-from constants.file_types import FileTypes
+
 from fastapi import FastAPI, Request, status, Response
 
-from helpers.rest_client import RestClient
-from helpers.zip_helper import ZipHelper
+from src.constants.file_types import FileTypes
+from src.helpers.rest_client import RestClient
+from src.helpers.zip_helper import ZipHelper
 from settings import Settings
 
 
